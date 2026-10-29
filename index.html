@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Utilivos brings your favorite tools together in one calm, focused workspace. Launching soon."
+    />
+    <title>Utilivos - Coming Soon</title>
+    <link rel="canonical" href="https://utilivos.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Utilivos" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://utilivos.com/" />
+    <meta property="og:title" content="Utilivos - Coming Soon" />
+    <meta
+      property="og:description"
+      content="Utilivos brings your favorite tools together in one calm, focused workspace. Launching soon."
+    />
+    <meta property="og:image" content="https://media.utilivos.com/landing/assets/img/wordmark.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Utilivos - Coming Soon" />
+    <meta
+      name="twitter:description"
+      content="Utilivos brings your favorite tools together in one calm, focused workspace. Launching soon."
+    />
+    <meta name="twitter:image" content="https://media.utilivos.com/landing/assets/img/wordmark.svg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Utilivos",
+            "url": "https://utilivos.com/",
+            "description": "Utilivos brings your favorite tools together in one calm, focused workspace. Launching soon."
+          },
+          {
+            "@type": "Organization",
+            "name": "Utilivos",
+            "url": "https://utilivos.com/",
+            "logo": "https://media.utilivos.com/landing/assets/img/wordmark.svg"
+          }
+        ]
+      }
+    </script>
+    <link rel="icon" href="https://media.utilivos.com/landing/assets/img/favicon.ico" sizes="any" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Noto+Sans+Mono:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://media.utilivos.com/landing/assets/css/styles.css" />
+    <script>
+      (function () {
+        try {
+          var k = "utilivos-theme";
+          var t = localStorage.getItem(k);
+          if (t === "light" || t === "dark") {
+            document.documentElement.setAttribute("data-theme", t);
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script src="https://media.utilivos.com/landing/assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <button
+      type="button"
+      class="theme-toggle"
+      id="theme-toggle"
+      aria-label="Switch color theme"
+    >
+      <svg
+        class="theme-toggle__icon theme-toggle__icon--moon"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </svg>
+      <svg
+        class="theme-toggle__icon theme-toggle__icon--sun"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        var b = document.getElementById("theme-toggle");
+        if (!b) return;
+        var s = null;
+        try {
+          s = localStorage.getItem("utilivos-theme");
+        } catch (e) {}
+        var light =
+          s === "light" ||
+          (s !== "dark" &&
+            window.matchMedia("(prefers-color-scheme: light)").matches);
+        b.classList.add(
+          light ? "theme-toggle--effective-light" : "theme-toggle--effective-dark"
+        );
+      })();
+    </script>
+    <div class="page">
+      <main class="main">
+        <section class="hero" aria-labelledby="hero-heading">
+          <p class="hero__brand">
+            <img
+              class="hero__wordmark"
+              src="https://media.utilivos.com/landing/assets/img/wordmark.svg"
+              alt="Utilivos"
+              width="564"
+              height="116"
+              decoding="async"
+            />
+          </p>
+          <h1 id="hero-heading" class="hero__title">All Your Tools. One Place.</h1>
+          <p class="hero__sub">
+            A single home for the utilities you rely on, fast, organized, and
+            ready when you are.
+          </p>
+        </section>
+
+        <section
+          class="countdown-wrap"
+          aria-labelledby="countdown-heading"
+          aria-live="polite"
+        >
+          <h2 id="countdown-heading" class="visually-hidden">Launch countdown</h2>
+          <div id="countdown" class="countdown" role="timer" aria-live="polite">
+            <div class="countdown__block">
+              <span id="days" class="countdown__value">0</span>
+              <span class="countdown__label">Days</span>
+            </div>
+            <div class="countdown__block">
+              <span id="hours" class="countdown__value">0</span>
+              <span class="countdown__label">Hours</span>
+            </div>
+            <div class="countdown__block">
+              <span id="minutes" class="countdown__value">0</span>
+              <span class="countdown__label">Minutes</span>
+            </div>
+            <div class="countdown__block">
+              <span id="seconds" class="countdown__value">0</span>
+              <span class="countdown__label">Seconds</span>
+            </div>
+          </div>
+          <p id="countdown-live" class="countdown-live is-hidden" aria-hidden="true">
+            We're live
+          </p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__note">Utilivos © <span id="footer-year">2026</span></p>
+      </footer>
+    </div>
+  </body>
+</html>
